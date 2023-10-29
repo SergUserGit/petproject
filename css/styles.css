@@ -1,0 +1,39 @@
+.main-header {
+  text-align: center;
+}
+
+.main-body {
+  background-color: #879bde;
+}
+
+.page-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.page-ref {
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: 700;
+  color: brown;
+}
+
+.aspect-body {
+  background-color: aqua;
+}
+
+.aspect-title {
+  text-align: center;
+}
+
+.aspect-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-aspect {
+  margin-top: 50px;
+  margin-left: 40px;
+}
