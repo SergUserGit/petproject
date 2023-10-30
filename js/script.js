@@ -213,7 +213,7 @@ function onClickAspectCalc() {
     for (let c = 0; c < datePlanet.length; c += 1) {
       const planetOne = datePlanet[i];
       const planetTwo = datePlanet[c];
-      if (planetOne === planetTwo) {
+      if (planetOne.planet === planetTwo.planet) {
         continue;
       }
 
@@ -226,13 +226,36 @@ function onClickAspectCalc() {
 
       const tekAspect = getAspect(difAsp);
       if (tekAspect !== "") {
-        console.log(planetOne + " " + tekAspect + " " + planetTwo);
+        const keyOne = planetOne.planet + "_" + planetTwo.planet;
+        const keyTwo = planetTwo.planet + "_" + planetOne.planet;
+
+        const findOneKey = dateAspect.find((zn) => zn.key === keyOne);
+        const findTwoKey = dateAspect.find((zn) => zn.key === keyTwo);
+        if (findOneKey === undefined && findTwoKey === undefined) {
+          const newObj = {
+            key: planetOne.planet + "_" + planetTwo.planet,
+            aspect: planetOne.planet + " " + tekAspect + " " + planetTwo.planet,
+          };
+          dateAspect.push(newObj);
+        }
       }
     }
   }
-  //Собрать данные в массив +
-  //Перебрать данные в массиве, обработать их, добавить аспекты в другой массив
-  //Вывести аспекты в разметеку
+
+  const newElemets = document.querySelectorAll(".aspects-list > li");
+  for (const element of newElemets) {
+    element.remove();
+  }
+
+  const aspectItems = dateAspect.map((el) => {
+    const newItem = document.createElement("li");
+    newItem.textContent = el.aspect;
+    newItem.classList.add("item-aspect");
+    return newItem;
+  });
+
+  const aspectsList = document.querySelector(".aspects-list");
+  aspectsList.append(...aspectItems);
 }
 
 function getDiffDegr(degrOne, degrTwo, minOne, minTwo) {

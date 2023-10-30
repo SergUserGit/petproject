@@ -62,3 +62,19 @@
   color: white;
   background-color: blue;
 }
+
+.section-aspects {
+  display: flex;
+}
+
+.item-aspect {
+  list-style: none;
+  color: darkblue;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.item-aspect:last-child {
+  margin-bottom: 0;
+}
