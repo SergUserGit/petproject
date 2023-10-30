@@ -208,14 +208,48 @@ function onClickAspectCalc() {
   addElemenArray(datePlanet, "Нептун");
   addElemenArray(datePlanet, "Плутон");
 
+  let dateAspect = [];
   for (let i = 0; i < datePlanet.length; i += 1) {
-    console.log(datePlanet[i]);
+    for (let c = 0; c < datePlanet.length; c += 1) {
+      const planetOne = datePlanet[i];
+      const planetTwo = datePlanet[c];
+      if (planetOne === planetTwo) {
+        continue;
+      }
+
+      const difAsp = getDiffDegr(
+        planetOne.degr,
+        planetTwo.degr,
+        planetOne.min,
+        planetTwo.min
+      );
+
+      const tekAspect = getAspect(difAsp);
+      if (tekAspect !== "") {
+        console.log(planetOne + " " + tekAspect + " " + planetTwo);
+      }
+    }
   }
-  //Собрать данные в массив
+  //Собрать данные в массив +
   //Перебрать данные в массиве, обработать их, добавить аспекты в другой массив
   //Вывести аспекты в разметеку
 }
 
+function getDiffDegr(degrOne, degrTwo, minOne, minTwo) {
+  if (degrOne >= degrTwo) {
+    if (minOne < minTwo) {
+      return degrOne - degrTwo - 1;
+    } else {
+      return degrOne - degrTwo;
+    }
+  } else {
+    if (minTwo < minOne) {
+      return degrTwo - degrOne - 1;
+    } else {
+      return degrTwo - degrOne;
+    }
+  }
+}
 function getAspect(diffDegr) {
   if (diffDegr >= 54 && diffDegr <= 66) {
     return "cекстиль";
