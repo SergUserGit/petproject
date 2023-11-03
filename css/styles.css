@@ -65,6 +65,7 @@
 
 .section-aspects {
   display: flex;
+  align-items: baseline;
 }
 
 .item-aspect {
