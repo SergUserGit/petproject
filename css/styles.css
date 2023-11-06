@@ -1,81 +1,136 @@
-.main-header {
-  text-align: center;
-}
+ @media screen and (min-width: 0px) and (max-width: 767px) {
+   .main-header {
+     margin-top: 0;
+   }
+ }
 
-.main-body {
-  background-color: #879bde;
-}
+ .main-header {
+   text-align: center;
+ }
 
-.page-list {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
+ .main-body {
+   background-color: #879bde;
+ }
 
-.page-ref {
-  text-decoration: underline;
-  font-size: 24px;
-  font-weight: 700;
-  color: brown;
-}
+ .page-list {
+   display: flex;
+   list-style: none;
+   gap: 20px;
+ }
 
-.aspect-body {
-  background-color: aqua;
-}
+ .page-list-main {
+   display: flex;
+   list-style: none;
+   gap: 20px;
+ }
 
-.aspect-title {
-  text-align: center;
-}
+ @media screen and (min-width: 0px) and (max-width: 767px) {
+   .page-list-main {
 
-.aspect-group {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 20px;
-}
+     padding-left: 0;
 
-.form-aspect {
-  margin-top: 50px;
-  margin-left: 40px;
-  border-style: solid;
-  padding: 10px;
-  border-color: crimson;
-  border-width: 4px;
-  max-width: 660px;
-  border-radius: 10px;
-}
+   }
+ }
 
-.aspect-calc {
-  border-style: none;
-  padding: 15px 20px;
-  color: red;
-  background-color: black;
-  font-weight: 700;
-  cursor: pointer;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 15px;
-}
+ .page-ref {
+   text-decoration: underline;
+   font-size: 24px;
+   font-weight: 700;
+   color: brown;
+ }
 
-.aspect-calc:hover {
-  color: white;
-  background-color: blue;
-}
+ .aspect-body {
+   background-color: aqua;
+ }
 
-.section-aspects {
-  display: flex;
-  align-items: baseline;
-}
+ .aspect-title {
+   text-align: center;
+ }
 
-.item-aspect {
-  list-style: none;
-  color: darkblue;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 24px;
-}
+ .aspect-group {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-bottom: 20px;
+ }
 
-.item-aspect:last-child {
-  margin-bottom: 0;
-}
+ @media screen and (min-width: 768px) {
+   .form-aspect {
+     margin-top: 50px;
+     margin-left: 40px;
+
+     padding: 10px;
+     border-width: 4px;
+     max-width: 660px;
+   }
+ }
+
+ @media screen and (min-width: 0px) and (max-width: 767px) {
+   .form-aspect {
+     margin-left: 0;
+   }
+ }
+
+ .form-aspect {
+   border-radius: 10px;
+   border-color: crimson;
+   border-style: solid;
+ }
+
+ .aspect-calc {
+   border-style: none;
+   padding: 15px 20px;
+   color: red;
+   background-color: black;
+   font-weight: 700;
+   cursor: pointer;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 15px;
+ }
+
+ .aspect-calc:hover {
+   color: white;
+   background-color: blue;
+ }
+
+ @media screen and (min-width: 768px) {
+   .section-aspects {
+     display: flex;
+     align-items: baseline;
+   }
+ }
+
+ .item-aspect {
+   list-style: none;
+   color: darkblue;
+   margin-bottom: 10px;
+   font-weight: 700;
+   font-size: 24px;
+ }
+
+ .item-aspect:last-child {
+   margin-bottom: 0;
+ }
+
+ @media screen and (min-width: 0px) and (max-width: 767px) {
+   .aspect-header {
+     display: flex;
+     align-items: baseline;
+   }
+ }
+
+ @media screen and (min-width: 0px) and (max-width: 767px) {
+   .section-heand {
+     margin-top: 0;
+     text-align: center;
+   }
+ }
+
+ @media screen and (min-width: 0px) and (max-width: 767px) {
+   .aspect-planet {
+     display: flex;
+     flex-direction: column;
+   }
+ }
