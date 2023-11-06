@@ -65,7 +65,7 @@
    }
  }
 
- @media screen and (min-width: 0px) and (max-width: 767px) {
+ @media screen and (min-width: 0px) and (max-width: 1199px) {
 
    .aspect-group {
      padding-left: 15px;
@@ -77,6 +77,12 @@
  @media screen and (min-width: 0px) and (max-width: 767px) {
    .form-aspect {
      margin-left: 0;
+   }
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+   .form-aspect {
+     padding: 0;
    }
  }
 
@@ -123,7 +129,7 @@
    margin-bottom: 0;
  }
 
- @media screen and (min-width: 0px) and (max-width: 767px) {
+ @media screen and (min-width: 0px) and (max-width: 1199px) {
    .aspect-header {
      display: flex;
      align-items: baseline;
@@ -144,6 +150,21 @@
    }
  }
 
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+   .aspect-planet {
+     display: flex;
+     align-items: baseline;
+   }
+ }
+
+ /* @media screen and (min-width: 768px) {
+   .aspect-planet {
+     display: flex;
+     align-items: baseline;
+     gap: 15px;
+   }
+ }*/
+
  @media screen and (min-width: 0px) and (max-width: 767px) {
    .aspect-lable {
      margin-bottom: 10px;
@@ -154,7 +175,16 @@
    }
  }
 
- @media screen and (min-width: 0px) and (max-width: 767px) {
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+   .aspect-lable {
+     margin-right: 15px;
+     font-size: 20px;
+     font-weight: 700;
+     color: blue;
+   }
+ }
+
+ @media screen and (min-width: 0px) and (max-width: 1199px) {
 
    .select-znak,
    .input-derg {
