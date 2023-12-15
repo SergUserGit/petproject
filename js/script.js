@@ -235,6 +235,7 @@ function onClickAspectCalc() {
           const newObj = {
             key: planetOne.planet + "_" + planetTwo.planet,
             aspect: planetOne.planet + " " + tekAspect + " " + planetTwo.planet,
+            typeasp: typeOfAspect(tekAspect),
           };
           dateAspect.push(newObj);
         }
@@ -251,6 +252,7 @@ function onClickAspectCalc() {
     const newItem = document.createElement("li");
     newItem.textContent = el.aspect;
     newItem.classList.add("item-aspect");
+    newItem.style.color = el.typeasp === "positive" ? "green" : "red";
     return newItem;
   });
 
@@ -290,4 +292,12 @@ function getAspect(diffDegr) {
     return "оппозиція";
   }
   return "";
+}
+
+function typeOfAspect(aspect) {
+  if (aspect === "cекстиль" || aspect === "тригон" || aspect === "з'єднання") {
+    return "positive";
+  } else {
+    return "negative";
+  }
 }
