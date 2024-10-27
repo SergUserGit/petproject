@@ -1,6 +1,7 @@
- @media screen and (min-width: 0px) and (max-width: 767px) {
+ @media screen and (min-width: 320px) and (max-width: 479px) {
    .main-header {
      margin-top: 0;
+     font-size: 28px;
    }
  }
 
@@ -24,11 +25,10 @@
    gap: 20px;
  }
 
- @media screen and (min-width: 0px) and (max-width: 767px) {
+ @media screen and (min-width: 320px) and (max-width: 479px) {
    .page-list-main {
-
      padding-left: 0;
-
+     justify-content: center;
    }
  }
 
@@ -39,12 +39,24 @@
    color: brown;
  }
 
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .page-ref {
+     font-size: 20px;
+   }
+ }
+
  .aspect-body {
    background-color: aqua;
  }
 
  .aspect-title {
    text-align: center;
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .aspect-title {
+     font-size: 20px;
+   }
  }
 
  .aspect-group {
@@ -91,6 +103,13 @@
    border-radius: 10px;
    border-color: crimson;
    border-style: solid;
+ }
+
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .form-aspect {
+     margin-bottom: 15px;
+   }
  }
 
  .aspect-calc {
@@ -141,6 +160,14 @@
    margin-bottom: 0;
  }
 
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .item-aspect {
+     font-size: 20px;
+     width: 290px;
+     text-align: center;
+   }
+ }
+
  @media screen and (min-width: 0px) and (max-width: 1199px) {
    .aspect-header {
      display: flex;
@@ -148,10 +175,17 @@
    }
  }
 
- @media screen and (min-width: 0px) and (max-width: 767px) {
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .aspect-header {
+     justify-content: center;
+   }
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
    .section-heand {
      margin-top: 0;
      text-align: center;
+     font-size: 20px;
    }
  }
 
@@ -177,7 +211,7 @@
    }
  }*/
 
- @media screen and (min-width: 0px) and (max-width: 767px) {
+ @media screen and (min-width: 320px) and (max-width: 479px) {
    .aspect-lable {
      margin-bottom: 10px;
      text-align: center;
@@ -196,13 +230,47 @@
    }
  }
 
- @media screen and (min-width: 0px) and (max-width: 767px) {
+ @media screen and (min-width: 320px) and (max-width: 479px) {
 
    .select-znak,
    .input-derg {
      margin-bottom: 10px;
    }
  }
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .input-derg {
+     text-align: center;
+   }
+ }
+
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .select-znak {
+     text-align: center;
+   }
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .label-degr-sun {
+     text-align: center;
+     margin-bottom: 10px;
+     font-weight: 700;
+     font-size: 20px;
+     color: blue;
+   }
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .label-min {
+     text-align: center;
+     margin-bottom: 10px;
+     font-weight: 700;
+     font-size: 20px;
+     color: blue;
+   }
+ }
+
 
  @media screen and (min-width: 768px) and (max-width: 1199px) {
    .select-znak {
@@ -225,6 +293,22 @@
      margin-bottom: 15px;
    }
 
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .input-min {
+     text-align: center;
+   }
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+   .aspects-list {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+   }
  }
 
  @media screen and (min-width: 768px) and (max-width: 1199px) {
