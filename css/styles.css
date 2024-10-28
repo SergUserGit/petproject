@@ -183,11 +183,12 @@
  }
 
  .form-aspect {
+   margin: 0;
    border-radius: 10px;
    border-color: crimson;
    border-style: solid;
    margin-bottom: 20px;
-   margin: 0;
+
  }
 
 
@@ -488,7 +489,7 @@
    .input-derg {
      max-width: 60px;
      margin-left: 10px;
-     margin-right: 40px;
+     margin-right: 65px;
      text-align: center;
    }
  }
