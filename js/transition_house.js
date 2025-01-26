@@ -11,6 +11,19 @@ const planetUranInput = document.querySelector("#aspect-uran");
 const planetNeptnunInput = document.querySelector("#aspect-neptun");
 const planetPlutonInput = document.querySelector("#aspect-pluton");
 
+const planetHouseOneInput = document.querySelector("#aspect-houseone");
+const planetHouseTwoInput = document.querySelector("#aspect-housetwo");
+const planetHouseThreeInput = document.querySelector("#aspect-housethree");
+const planetHouseFourInput = document.querySelector("#aspect-housefour");
+const planetHouseFiveInput = document.querySelector("#aspect-housefive");
+const planetHouseSixInput = document.querySelector("#aspect-housesix");
+const planetHouseSevenInput = document.querySelector("#aspect-houseseven");
+const planetHouseEightInput = document.querySelector("#aspect-houseeight");
+const planetHouseNineInput = document.querySelector("#aspect-housenine");
+const planetHouseTenInput = document.querySelector("#aspect-houseten");
+const planetHouseElewenInput = document.querySelector("#aspect-houseelewen");
+const planetHouseTweleveInput = document.querySelector("#aspect-housetwelve");
+
 calc_button.addEventListener("click", onClickTransHouseButton);
 
 function addHouseInArray(house, znack, arrayOnHouses) {
@@ -21,21 +34,80 @@ function addHouseInArray(house, znack, arrayOnHouses) {
   arrayOnHouses.push(objZnak);
 }
 
+function getObjectValuesHouses() {
+  let planetHouseOneValue =
+    planetHouseOneInput.options[planetHouseOneInput.value - 1].textContent;
+
+  let planetHouseTwoValue =
+    planetHouseTwoInput.options[planetHouseTwoInput.value - 1].textContent;
+
+  let planetHouseThreeValue =
+    planetHouseThreeInput.options[planetHouseThreeInput.value - 1].textContent;
+
+  let planetHouseFourValue =
+    planetHouseFourInput.options[planetHouseFourInput.value - 1].textContent;
+
+  let planetHouseFiveValue =
+    planetHouseFiveInput.options[planetHouseFiveInput.value - 1].textContent;
+
+  let planetHouseSixValue =
+    planetHouseSixInput.options[planetHouseSixInput.value - 1].textContent;
+
+  let planetHouseSevenValue =
+    planetHouseSevenInput.options[planetHouseSevenInput.value - 1].textContent;
+
+  let planetHouseEightValue =
+    planetHouseEightInput.options[planetHouseEightInput.value - 1].textContent;
+
+  let planetHouseNineValue =
+    planetHouseNineInput.options[planetHouseNineInput.value - 1].textContent;
+
+  let planetHouseTenValue =
+    planetHouseTenInput.options[planetHouseTenInput.value - 1].textContent;
+
+  let planetHouseElevenValue =
+    planetHouseElewenInput.options[planetHouseElewenInput.value - 1]
+      .textContent;
+
+  let planetHouseTwelveValue =
+    planetHouseTweleveInput.options[planetHouseTweleveInput.value - 1]
+      .textContent;
+
+  const objValues = {
+    planetHouseOneValue,
+    planetHouseTwoValue,
+    planetHouseThreeValue,
+    planetHouseFourValue,
+    planetHouseFiveValue,
+    planetHouseSixValue,
+    planetHouseSevenValue,
+    planetHouseEightValue,
+    planetHouseNineValue,
+    planetHouseTenValue,
+    planetHouseElevenValue,
+    planetHouseTwelveValue,
+  };
+
+  return objValues;
+}
+
 function getArrayHousesInZnZodiak() {
+  const valuesHouses = getObjectValuesHouses();
+
   let arrayOnHouses = [];
 
-  addHouseInArray(1, "Діва", arrayOnHouses);
-  addHouseInArray(2, "Терези", arrayOnHouses);
-  addHouseInArray(3, "Скорпіон", arrayOnHouses);
-  addHouseInArray(4, "Стрілець", arrayOnHouses);
-  addHouseInArray(5, "Козеріг", arrayOnHouses);
-  addHouseInArray(6, "Водолій", arrayOnHouses);
-  addHouseInArray(7, "Риби", arrayOnHouses);
-  addHouseInArray(8, "Овен", arrayOnHouses);
-  addHouseInArray(9, "Тілець", arrayOnHouses);
-  addHouseInArray(10, "Близнюки", arrayOnHouses);
-  addHouseInArray(11, "Рак", arrayOnHouses);
-  addHouseInArray(12, "Лев", arrayOnHouses);
+  addHouseInArray(1, valuesHouses.planetHouseOneValue, arrayOnHouses);
+  addHouseInArray(2, valuesHouses.planetHouseTwoValue, arrayOnHouses);
+  addHouseInArray(3, valuesHouses.planetHouseThreeValue, arrayOnHouses);
+  addHouseInArray(4, valuesHouses.planetHouseFourValue, arrayOnHouses);
+  addHouseInArray(5, valuesHouses.planetHouseFiveValue, arrayOnHouses);
+  addHouseInArray(6, valuesHouses.planetHouseSixValue, arrayOnHouses);
+  addHouseInArray(7, valuesHouses.planetHouseSevenValue, arrayOnHouses);
+  addHouseInArray(8, valuesHouses.planetHouseEightValue, arrayOnHouses);
+  addHouseInArray(9, valuesHouses.planetHouseNineValue, arrayOnHouses);
+  addHouseInArray(10, valuesHouses.planetHouseTenValue, arrayOnHouses);
+  addHouseInArray(11, valuesHouses.planetHouseElevenValue, arrayOnHouses);
+  addHouseInArray(12, valuesHouses.planetHouseTwelveValue, arrayOnHouses);
 
   return arrayOnHouses;
 }
