@@ -591,3 +591,96 @@
  .house-paragh:hover {
    color: rgb(101, 186, 75);
  }
+
+ .houses-list-dates {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-bottom: 20px;
+ }
+
+ .houses-list-item {
+   border: 4px solid #4a2b7c;
+   padding: 35px;
+   cursor: pointer;
+   transition: background-color 500ms linear;
+   transition: box-shadow 500ms linear;
+   border-radius: 10px;
+ }
+
+ .group-list-houses {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 39px;
+ }
+
+ .houses-list-label {
+   color: #e766da;
+   line-height: 0%;
+   font-family: "Roboto", sans-serif;
+   font-weight: 700;
+ }
+
+ .houses-list-select {
+   border-radius: 10px;
+   background: rgba(86, 75, 108, 0.33);
+   text-align: center;
+   color: #000;
+   line-height: 0%;
+   font-weight: 700;
+ }
+
+ .calc-date {
+   display: flex;
+   gap: 400px;
+   justify-content: center;
+ }
+
+ .planet-list {
+   list-style: none;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 46px;
+ }
+
+ .planet-item {
+   border: 4px solid #4a2b7c;
+   padding: 35px;
+   cursor: pointer;
+   transition: background-color 500ms linear;
+   transition: box-shadow 500ms linear;
+   border-radius: 10px;
+ }
+
+ .group-planet {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 39px;
+ }
+
+ .planet-label {
+   color: #e766da;
+   line-height: 0%;
+   font-family: "Roboto", sans-serif;
+   font-weight: 700;
+ }
+
+ .select-zn-zodiak {
+   border-radius: 10px;
+   background: rgba(86, 75, 108, 0.33);
+   text-align: center;
+   color: #000;
+   line-height: 0%;
+   font-weight: 700;
+
+ }
+
+ .calc-button {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
